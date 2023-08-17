@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anteiko</title>
+    <link rel="icon" type="image/jpg" href="./assets/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!--HEADER STRUCTURE FOR PHONE AND TABLET-->
+    <div class="container-fluid responsive-structure-header">
+        <div class="row">
+            <!--ICON THE BUY AND ICON USER FOR PAGE IN PHONE/TABLET-->
+            <div class="col-2 father-phone-menu">
+                <div class="phone-menu">
+                    <a href=""><img id="phone-menu" src="./assets/menu.svg"></a>
+                    <a href=""><img id="phone-user" src="./assets/user-circle.svg"></a>
+                </div>
+            </div>
+
+            <!--LOGO FOR PAGE IN PHONE/TABLET-->
+            <div class="col-8 father-phone-logo">
+                <div class="phone-logo">
+                    <a href=""><img src="./assets/logo.png"></a>
+                </div>
+            </div>
+
+            <!--ICON BUY FOR PAGE IN PHONE/TABLET-->
+            <div class="col-2 father-phone-buy">
+                <div class="phone-buy">
+                    <a href=""><img src="./assets/icon-buy.svg"></a>
+                </div>
+            </div>
+
+            <!--SEARCH FOR PAGE IN PHONE/TABLET-->
+            <div class="col-12 father-phone-search">
+                <div class="phone-search">
+                    <input type="text" placeholder="BUSCAR PRODUCTOS DESEADOS">
+                    <button>
+                        <a href=""><img src="./assets/search.svg"></a>                          
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--STRUCTURE FOR HEADER-->
+    <div class="container-fluid structure-header">
+        <div class="row">
+            <!--LOGO FOR PAGE-->
+            <div class="col-2 father-logo">
+                <div class="logo">
+                    <a href=""><img src="./assets/logo.png"></a>
+                </div>
+            </div>
+
+            <!--SEARCH FOR PAGE-->
+            <div class="col-7 father-search">
+                <div class="search">
+                    <input type="text" placeholder="BUSCAR PRODUCTOS DESEADOS">
+                    <button>
+                        <a href=""><img src="./assets/search.svg"></a>                          
+                    </button>
+                </div>
+            </div>
+
+            <!--ICON THE BUY FOR PAGE-->
+            <div class="col-1 father-buy">`''
+                <div class="buy">
+                    <a href=""><img src="./assets/icon-buy.svg"></a>
+                </div>
+            </div>
+
+            <!--ICON THE USER FOR PAGE-->
+            <div class="col-2 father-user">
+                <div class="user">
+                    <a href=""><img src="./assets/user-circle.svg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--STRUCTURE NAVBAR FOR PAGE DESKTOP/TABLET-->
+    <div class="container-fluid grand-father-navbar">
+        <div class="row">
+            <div class="col-12 father-navbar">
+                <!--PRIMER DROPDOWN-->
+                <select class="dropdown">
+                    <option selected>CATEGORIAS</option>
+                    <option value="1">COMPUTADORAS</option>
+                    <option value="2">LAPTOPS</option>
+                    <option value="3">TABLETS</option>
+                    <option value="4">CELULARES</option>
+                    <option value="5">IMPRESORAS</option>
+                </select>
+                <img src="./assets/Vector 7.svg">
+
+                <!--SEGUNDO DROPDOWN-->
+                <select class="dropdown">
+                    <option selected>MARCAS</option>
+                    <option value="1">NVIDIA GFRC</option>
+                    <option value="2">AMD</option>
+                    <option value="3">INTEL</option>
+                    <option value="4">ASUS</option>
+                    <option value="5">MSI</option>
+                </select>
+                <img src="./assets/Vector 7.svg">
+
+                <!--TERCER DROPDOWN-->
+                <select class="dropdown">
+                    <option selected>COMPONENTES</option>
+                    <option value="1">PANTALLAS</option>
+                    <option value="2">MEMORIA RAM</option>
+                    <option value="3">PLACA MADRE</option>
+                    <option value="4">PROCESADOR</option>
+                    <option value="5">TARJETAS DE VIDEO</option>
+                </select>
+                <img src="./assets/Vector 7.svg">
+
+                <!--OFERTA-->
+                <a href="">OFERTAS %</a>
+            </div>
+        </div>
+    </div>
+
+    <!--STRUCTURE FOR THE MAIN PAGE-->
+    <!--IMAGE CAROUSEL-->
+    <div class="container-fluid father-carousel">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button id="change" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button id="change" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./assets/banner.png" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./assets/banner2.png" class="d-block w-100">
+                        </div>
+                    </div>
+
+                    <button id="buttonone" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <img class="next-configuration" src="./assets/Vector-cambio-izquierda.svg">
+                    </button>
+
+                    <button id="buttonone" class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <img class="next-configuration" src="./assets/Vector-cambio.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTAINER OF AVAILABLE PRODUCTS-->
+    <div class="container-fluid father-first-title">
+        <div class="row">
+            <div class="col-12">
+                <div class="first-title">
+                    <a href=""><h1>NUEVOS PRODUCTOS</h1></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTAINER OF PRODUCTS N.1-->
+    <div class="container-fluid father-cont-product">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 product-container">
+                <div class="product-1">
+                    <a href=""><img src="./assets/1.png"></a>
+                    <a href=""><p>MSI Gaming GeForce RTX 4090 24GB GDRR6X 384-Bit Ada Lovelace Architecture Tarjeta gráfica</p></a>
+                    <a id="price-product" href=""><span>S/ 6060.07</span></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 product-container">
+                <div class="product-1">
+                    <a href=""><img src="./assets/2.png"></a>
+                    <a href=""><p>MSI Gaming GeForce RTX 4080 16GB GDRR6X 384-Bit Ada Lovelace Architecture Tarjeta gráfica</p></a>
+                    <a id="price-product" href=""><span>S/ 4332.82</span></a>
+                </div>
+            </div>
+
+            <div id="phone-close" class="col-lg-4 col-md-12 col-sm-6 product-container">
+                <div class="product-1">
+                    <a href=""><img src="./assets/3.png"></a>
+                    <a href=""><p>Gigabyte Tarjeta gráfica GeForce RTX 4070 WINDFORCE OC 12GB 192 bits GDDR6X</p></a>
+                    <a id="price-product" href=""><span>S/ 2054.02</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTAINER OF AVAILABLE PRODUCTS-->
+    <div class="container-fluid father-first-title">
+        <div class="row">
+            <div class="col-12">
+                <div class="first-title">
+                    <a href=""><h1>LAPTOPS GAMA ALTA</h1></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTAINER OF PRODUCTS N.2-->
+    <div class="container-fluid father-cont-product">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 product-container">
+                <div id="setting-laptop" class="product-1">
+                    <a href=""><img src="./assets/4.png"></a>
+                    <a href=""><p>ASUS ROG Strix G16 (2023) GeForce RTX 4060, Intel Core i7-13650HX, 16GB DDR5, 512GB PCIe SSD</p></a>
+                    <a id="price-product" href=""><span>S/ 4884.07</span></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 product-container">
+                <div id="setting-laptop" class="product-1">
+                    <a href=""><img src="./assets/5.png"></a>
+                    <a href=""><p>ASUS ROG Strix Scar 15 NVIDIA GeForce RTX 3070 Ti, Intel Core i9 12900H, 16 GB DDR5, 1 TB SSD</p></a>
+                    <a id="price-product" href=""><span>S/ 5876.32</span></a>
+                </div>
+            </div>
+
+            <div id="phone-close" class="col-lg-4 col-md-12 col-sm-6 product-container">
+                <div id="setting-laptop" class="product-1">
+                    <a href=""><img src="./assets/6.png"></a>
+                    <a href=""><p>ASUS ROG Strix G16 (2023) GeForce RTX 4070, Intel Core i9-13980HX, 16GB DDR5, 1TB PCIe SSD, Wi-Fi 6E</p></a>
+                    <a id="price-product" href=""><span>S/ 7346.32</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTAINER OF AVAILABLE PRODUCTS-->
+    <div class="container-fluid father-first-title">
+        <div class="row">
+            <div class="col-12">
+                <div class="first-title">
+                    <a href=""><h1>PROCESADORES</h1></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTAINER OF PRODUCTS N.3-->
+    <div class="container-fluid father-cont-product">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 product-container">
+                <div id="setting-procesador" class="product-1">
+                    <a href=""><img src="./assets/9.png"></a>
+                    <a href=""><p>AMD Ryzen 5 5600X</p></a>
+                    <a id="price-product" href=""><span>S/ 581.79</span></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 product-container">
+                <div id="setting-procesador" class="product-1">
+                    <a href=""><img src="./assets/8.png"></a>
+                    <a href=""><p>AMD Ryzen 7 5700G</p></a>
+                    <a id="price-product" href=""><span>S/ 635.33</span></a>
+                </div>
+            </div>
+
+            <div id="phone-close" class="col-lg-4 col-md-12 col-sm-6 product-container">
+                <div id="setting-procesador" class="product-1">
+                    <a href=""><img src="./assets/7.png"></a>
+                    <a href=""><p>AMD RIZEN 9 5900X</p></a>
+                    <a id="price-product" href=""><span>S/ 1245.67</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTAINER OF AVAILABLE PRODUCTS-->
+    <div class="container-fluid father-first-title">
+        <div class="row">
+            <div class="col-12">
+                <div class="first-title">
+                    <a href=""><h1>TECLADOS-MOUSE GAMER</h1></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTAINER OF PRODUCTS N.4-->
+    <div class="container-fluid father-cont-product">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 product-container">
+                <div class="product-1">
+                    <a href=""><img src="./assets/10.png"></a>
+                    <a href=""><p>Redragon K618 Teclado inalámbrico y ratón inalámbrico para juegos M991 // +50000000 Pulsaciones</p></a>
+                    <a id="price-product" href=""><span>S/ 367.50</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER STRUCTURE OF THE PAGE  -->
+    <div class="container-fluid father-header">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 footer-cont">
+                <div class="footer-cont">
+                    <img id="footer-logo" src="./assets/logo.png">
+                    <p>Informacion</p>
+                    <ul>
+                        <li><a href="">Nuestras tiendas</a></li>
+                        <li><a href="">Nosotros</a></li>
+                    </ul>
+                    <a href="">
+                        <div id="claims-book">
+                            <span>LIBRO DE RECLAMOS</span>
+                            <img src="./assets/12,png.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-1 footer-cont1">
+                <div class="social-networks">
+                    <p>Redes</p>
+                    <a href=""><img src="./assets/facebook.png"></a>
+                    <a href=""><img src="./assets/whatsapp.png"></a>
+                    <a href=""><img src="./assets/instagram.png"></a>
+                    <a href=""><img src="./assets/twitter.png"></a>
+                    <a href=""><img src="./assets/youtube.png"></a>
+                </div>
+            </div>
+
+            <div class="co-lg-5 col-md-4 col-sm-6 footer-cont2">
+                <div class="footer-policies">
+                    <p>Politicas</p>
+                    <ul>
+                        <li><a href="">Politica de Cookies</a></li>
+                        <li><a href="">Politica de privacidad de datos</a></li>
+                        <li><a href="">Terminos y condiciones</a></li>
+                    </ul>
+                    <h1 id="contact"><a href="">CONTACTANOS</a></h1>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-12 footer-cont3">
+                <div class="structure-maps">
+                    <p>Ubicanos</p>
+                    <a href=""><img src="./assets/11.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+</body>
+</html>
